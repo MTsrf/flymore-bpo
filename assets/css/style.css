@@ -715,62 +715,65 @@ section {
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
-.product .icon-box {
-  text-align: center;
-  border: 1px solid #e2eefd;
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
+.cbp-item{
+  float: left;
+  width: 320px;
+}
+#product .container .row{
+  padding-bottom: 10px;
+}
+.single-portfolio {
+  position: relative;
+  border-radius: 5px;
   background: #fff;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
-.product .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #f1f6fe;
-  border-radius: 4px;
-  border: 1px solid #deebfd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition: ease-in-out 0.3s;
+.single-portfolio .portfolio-head {
+  position: relative;
+  z-index: 66;
 }
-
-.product .icon-box .icon i {
-  color: #3b8af2;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
+.single-portfolio img {
+  display: block;
+  width: 100%;
+  z-index: 3;
+  transition: all 0.8s ease;
 }
-
-.product .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
+.cbp img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
 }
-
-.product .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
+.single-portfolio .portfolio-content {
+  position: relative;
+  top: -30px;
+  border-radius: 30px 30px 30px 0!important;
+  text-align: left;
+  width: 78%;
+  padding: 18px 20px;
+  border-left: 3px solid #1b1b1b;
+  background: #fff;
+  left: 15px;
+  display: inline-block;
+  z-index: 22222;
+  margin-bottom: -30px;
+  -webkit-box-shadow: -2px 2px 6px #0000002e;
+  -moz-box-shadow: -2px 2px 6px #0000002e;
+  box-shadow: -2px 2px 6px #0000002e;
 }
-
-.product .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+.cbp a, .cbp a:hover, .cbp a:active {
+  text-decoration: none;
+  outline: 0;
 }
-
-.product .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
-}
-
-.product .icon-box:hover h4 a, .product .icon-box:hover .icon i {
-  color: #106eea;
-}
-
-.product .icon-box:hover .icon {
-  border-color: #106eea;
+.single-portfolio .portfolio-content h6 a {
+  margin: 0;
+  color: #1b1b1b;
+  position: relative;
+  font-family: product sans,sans-serif;
+  font-weight: 600;
 }
 
 
